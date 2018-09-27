@@ -1,0 +1,31 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iis": {
+      "applicationUrl": "http://localhost/MoveleirosChatServer",
+      "sslPort": 0
+    },
+    "iisExpress": {
+      "applicationUrl": "http://localhost:59470/",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "api/values",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "MoveleirosChatServer": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://0.0.0.0:59471/"
+    }
+  }
+}

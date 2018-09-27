@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.50.4" />
+    <PackageReference Include="IBM.WatsonDeveloperCloud.Conversation.v1" Version="1.2.0" />
+    <PackageReference Include="JWT" Version="3.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.0.0-preview1-final" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ImageProcessing\ImageProcessing.csproj" />
+    <ProjectReference Include="..\MovChat.Email\MovChat.Email.csproj" />
+    <ProjectReference Include="..\MovChat.PluginCore\MovChat.PluginCore.csproj" />
+    <ProjectReference Include="..\MovChat.Plugins.HumanAgent\MovChat.Plugins.HumanAgent.csproj" />
+    <ProjectReference Include="..\MovChat.Plugins.WatsonAgent\MovChat.Plugins.WatsonAgent.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="EmailTemplates\client_without_agent.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

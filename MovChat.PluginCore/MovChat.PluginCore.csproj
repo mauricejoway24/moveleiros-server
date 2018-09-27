@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MovChat.Core\MovChat.Core.csproj" />
+    <ProjectReference Include="..\MovChat.Data\MovChat.Data.csproj" />
+  </ItemGroup>
+
+</Project>
